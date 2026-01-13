@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Week1 progress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="one.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://thumbs.dreamstime.com/b/logo-design-digital-marketing-agency-featuring-sleek-abstract-shape-blue-orange-gradients-set-against-white-321641955.jpg"
+                 alt="Digital Agency">
+            <span>Digital Agency</span> 
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="actions">
+            <!-- Tailwind utility USED -->
+            <button id="theme" class="hover:scale-105 transition-all duration-300 px-4 py-2 rounded
+        bg-black text-white dark:bg-white dark:text-black">Light Mode</button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section-->
+    <section class="hero flex flex-col items-center justify-center text-center" id="home">
+        <h1>Welcome to Our Digital Agency</h1>
+        <p>Your success is our priority. We provide top-notch digital solutions.</p>
+        <a href="#about">
+            <button class="primary-btn hover:scale-110 transition-all duration-300">
+                Get Started
+            </button>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p class="about-text">
+            We are a team of passionate digital experts dedicated to delivering innovative solutions that drive results.
+            With years of experience in web development, marketing, and SEO, we help businesses establish a strong online presence.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p>We build responsive and engaging websites tailored to your business needs.</p>
+            </div>
+            <div class="service-item">
+                <h3>Marketing</h3>
+                <p>Our marketing strategies will help you reach a wider audience and grow your brand.</p>
+            </div>
+            <div class="service-item">
+                <h3>SEO Optimization</h3>
+                <p>Improve your website's visibility on search engines with our expert SEO services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+  <div class="contact-container">
+
+    <div class="contact-info glass">
+      <h2>Contact Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Reiciendis dignissimos eaque doloremque, nulla mollitia facilis
+        temporibus ullam voluptas nostrum consequuntur.
+      </p>
+
+      <div class="info-item">
+        <span><i class="fa-solid fa-house text-xl"></i></span>
+        <div>
+          <h4>Address</h4>
+          <p>IT Town,India<br>000000</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <span><i class="fa-solid fa-phone"></i></span>
+        <div>
+          <h4>Phone</h4>
+          <p>561-456-2321</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <span><i class="fa-solid fa-envelope"></i></span>
+        <div>
+          <h4>Email</h4>
+          <p>example@email.com</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="contact-form">
+      <h3>Send Message</h3>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Type your Message..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Footer (Performance FIX) -->
+    <footer class="footer">
+        <p>&copy; 2024 Digital Agency. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
