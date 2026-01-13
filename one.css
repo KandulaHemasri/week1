@@ -362,9 +362,6 @@ body{
 
 
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
 
     .service-grid {
         grid-template-columns: 1fr;
