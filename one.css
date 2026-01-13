@@ -381,6 +381,10 @@ body{
         text-align: center;
     }
 
+    .navbar {
+        position: relative; 
+    }
+
     .nav-links {
     display: none;
   }

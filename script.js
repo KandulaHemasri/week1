@@ -27,14 +27,21 @@
 
 
 
-    /* Hamburger toggle */
+/* Hamburger toggle (open + close) */
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
-/* Close menu after click */
+/* Close menu when clicking a nav link */
 document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
         navLinks.classList.remove("active");
     });
+});
+
+/* Close menu when screen resizes to desktop */
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+        navLinks.classList.remove("active");
+    }
 });
