@@ -65,6 +65,7 @@ body{
 
 .nav-links{
     list-style: none;
+    display: none;
     gap: 20px;
 }
 
@@ -361,21 +362,18 @@ body{
 
 
 @media (min-width: 769px) {
-    .nav-links {
-        display: flex;
-    }
+
     .hamburger {
-        display: none; /* hide hamburger on desktop */
+        display: none;
     }
 
     .nav-links {
+        display: flex;
         position: static;
-        display: flex; /* always visible on desktop */
         flex-direction: row;
         background: transparent;
         width: auto;
         padding: 0;
-        gap: 20px;
     }
 }
 
