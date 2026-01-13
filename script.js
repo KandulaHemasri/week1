@@ -26,12 +26,13 @@
     });
 
 
-    /* Hamburger Menu Toggle */
+
+    /* Hamburger toggle */
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
-/* Close menu when clicking a link (mobile UX fix) */
+/* Close menu after click */
 document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
         navLinks.classList.remove("active");
