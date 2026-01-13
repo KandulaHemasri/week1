@@ -64,7 +64,6 @@ body{
 }
 
 .nav-links{
-    display: flex;
     list-style: none;
     gap: 20px;
 }
@@ -361,6 +360,27 @@ body{
 }
 
 
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex;
+    }
+    .hamburger {
+        display: none; /* hide hamburger on desktop */
+    }
+
+    .nav-links {
+        position: static;
+        display: flex; /* always visible on desktop */
+        flex-direction: row;
+        background: transparent;
+        width: auto;
+        padding: 0;
+        gap: 20px;
+    }
+}
+
+
+
 
 
 @media (max-width: 768px) {
@@ -424,6 +444,7 @@ body{
         top: 70px;
         left: 0;
         width: 100%;
+        display: none;
         flex-direction: column;
         align-items: center;
         gap: 20px;
