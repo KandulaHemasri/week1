@@ -427,7 +427,6 @@ body{
     }
 
     .nav-links {
-        display: none;
         position: absolute;
         top: 70px;
         left: 0;
@@ -442,6 +441,10 @@ body{
 
     .nav-links.active {
         display: flex;
+    }
+
+      .nav-links.open {
+        height: 220px;
     }
 
 
