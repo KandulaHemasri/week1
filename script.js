@@ -6,21 +6,17 @@
 
 
 
-    const toggleBtn = document.getElementById("theme");
-    const body = document.body;
- 
-    toggleBtn.textContent = "Dark Mode";
+const themeBtn = document.getElementById("theme");
+const icon = themeBtn.querySelector("i");
 
-    /* Dark Mode Toggle */
-    toggleBtn.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
 
-        if (body.classList.contains("dark-mode")) {
-            toggleBtn.textContent = "Light Mode";
-        } else {
-            toggleBtn.textContent = "Dark Mode";
-        }
-    });
+    icon.classList.toggle("fa-moon");
+    icon.classList.toggle("fa-sun");
+});
+
+
 
 
     document.addEventListener("DOMContentLoaded", () => {

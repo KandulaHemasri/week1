@@ -193,6 +193,12 @@ body{
     text-align: center;
 }
 
+.services h2 {
+    font-size: 25px;
+    position: relative;
+}
+
+
 .service-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -213,6 +219,15 @@ body{
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
+
+.service-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
 
 /* contact section*/
 /* ===== Contact Section ===== */
@@ -405,6 +420,10 @@ body{
         font-size: 16px;
     }
     .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+     .service-grid {
         grid-template-columns: 1fr;
     }
     
