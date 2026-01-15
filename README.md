@@ -16,7 +16,7 @@ This project is a high-performance, production-grade landing page for "Prodesk I
 
 ##  Tech Stack
 * **HTML5** (Semantic Structure)
-* **Tailwind CSS** (via CDN for development speed)
+* **CSS (used custom css)
 * **Vanilla JavaScript** (DOM manipulation, LocalStorage, Intersection Observer)
 
 
