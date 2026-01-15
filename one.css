@@ -397,7 +397,7 @@ body{
     .hero {
         flex-direction: column;
         text-align: center;
-        margin-top:79px;
+        margin-top:10px;
         background-position: top center;
         background-size: 70%;
         padding: 40px 20px;
